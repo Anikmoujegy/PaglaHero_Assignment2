@@ -10,6 +10,12 @@
     text-decoration: none;
     color: #29241d;
 }
+button{
+    transition: transform 0.5s ease-out;
+}
+button:hover{
+    transform: scale(1.1);
+}
 
 /* header css */
 header{
@@ -84,6 +90,12 @@ main{
     display: flex;
     margin: 50px 10%;
 }
+.main-feature-img{
+    transition: transform 0.5s ease-in;
+}
+.main-feature-img:hover{
+    transform: scale(1.05);
+}
 .main-feature-img-grid-div{
     width: 200%;
     height: 200%;
@@ -92,10 +104,7 @@ main{
     gap: 20px;
     padding-right: 40px;
 }
-.main-feature-img{
-    height: 100%;
-    width: 100%;
-}
+
 .main-feature-description{
     padding: 10% 20px;
 }
@@ -125,7 +134,7 @@ main{
 }
 /* main section 2 for features you love and enjoy */
 .main-exp-main-div{
-    margin: 100px 0;
+    margin: 60px 0;
     display: flex;
 }
 .main-exp-sub-div{
@@ -151,7 +160,7 @@ main{
 .main-exp-btn{
     position: relative;
     left: 45%;
-    top: 1130px;
+    top: 1090px;
     padding: 20px;
     border: none;
     border-radius: 7px;
@@ -160,6 +169,56 @@ main{
 }
 .main-exp-btn:hover{
     background-color: #c97b0f;
+}
+/* section of some facts css  */
+.main-fact-title{
+    margin-right: 60%;
+    margin-top: 200px;
+}
+.main-fact-h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.main-fact-p{
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5a5656;
+}
+.main-fact-grid-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main-fact-sub-div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #c97b0f;
+    border-radius: 10px;
+    margin: 15px auto;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+.main-fact-sub-div:hover{
+    background-color: #c97b0f;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px 0px #29241d70;
+}
+.main-fact-img{
+    margin-top: 15%;
+    margin-left: auto;
+    right: auto;
+    margin-bottom: 0px;
+}
+.main-fact-h2{
+    margin: 10px 0;
+    font-size: 36px;
+}
+.main-fact-h4{
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5a5656;
 }
 
 /* footer css  */
@@ -301,7 +360,14 @@ body{
         left: 30%;
         top: 1000px;
     }
-
+    .main-fact-grid-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-fact-title{
+        margin-right: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
     .footer-work-h2, .footer-sponsor-h2{
         font-size: 24px;
     }
